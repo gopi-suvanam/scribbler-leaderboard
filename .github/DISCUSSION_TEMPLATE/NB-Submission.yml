@@ -1,0 +1,7 @@
+title: Submit Your Notebooks
+labels: Notebook,developer
+body:
+- type: input
+  label: link of the repo
+- type: markdown
+  label: Describer the notebook briefly.
