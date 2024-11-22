@@ -26,8 +26,11 @@ body:
       description: Path of the .jsnb file within the github repo. Should be line `example_folder/example_file.jsnb`
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: descriptin
     attributes:
+      label: Description
+      description: Describe your notebook using markdown.
       value: |
         ## Description of notebook
 
