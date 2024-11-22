@@ -1,10 +1,7 @@
 title: "Scribbler Notebook:"
 labels: ["Notebook Submission"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
+
   - type: input
     id: user
     attributes:
