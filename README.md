@@ -1,2 +1,2 @@
-# scribbler-leaderboard
+# Scribbler User Notebooks
 List of user generated notebooks..
