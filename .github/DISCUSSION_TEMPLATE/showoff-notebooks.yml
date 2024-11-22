@@ -1,55 +1,46 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: ""
+labels: ["Notebook Submission"]
 body:
   - type: markdown
     attributes:
       value: |
         This is text that will show up in the template!
-  - type: textarea
-    id: improvements
+  - type: input
+    id: user
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
+      label: User
+      description: Github user name
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repo
+      description: Github repository name
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Path
+      description: Path of the .jsnb file within the github repo. Should be line `example_folder/example_file.jsnb`
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
+        ## Description of notebook
+
   - type: dropdown
     id: download
     attributes:
-      label: Which area of this project could be most improved?
+      label: Which domain is the notebook for?
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+        - AI/ML
+        - JavaScript
+        - XR
+        - Gaming
+        - Others
     validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      required: false
+
