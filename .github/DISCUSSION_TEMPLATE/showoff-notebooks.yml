@@ -26,6 +26,13 @@ body:
       description: Path of the .jsnb file within the github repo. Should be line `example_folder/example_file.jsnb`
     validations:
       required: true
+  - type: input
+    id: image
+    attributes:
+      label: Thumbnail
+      description: Path of a thumbnail image for displaying.
+    validations:
+      required: false
   - type: textarea
     id: descriptin
     attributes:
